@@ -16,7 +16,8 @@
 <body>
 	<h2>Only dead have seen the end of the war - Plato</h2>
 		<br />
-	
+	<a href="register.php"> Register - Destroy your enemies!</a>
+	<br /> <br />
 	<form action="login.php" method="post">
 		Login: <br /> <input type="text" name="login" /> <br />
 		Password: <br /> <input type="password" name="password" /> <br />
