@@ -50,13 +50,13 @@
 		}
 		
 		//Bot or not? Recaptcha mechanics
-		$secret_key = "6Ld2W50UAAAAADFZgZwbx5czLvdXHWgKMQUL4g5b";
+		$secret_key = "";
 		$check = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret_key.'&response='.$_POST['g-recaptcha-response']);
 		$response = json_decode($check);
 		
 		if($response->success==false){
 			$everything_OK = false;
-			$_SESSION['e_bot']="Confirm that you are not a robot!";
+			$_SESSION['e_bot']="Confirm that you are not a robot! (Or add a secret key to code)";
 		}
 		
 		require_once "connect.php";
