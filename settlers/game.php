@@ -26,7 +26,6 @@
 	echo "<p><b>Food</b>: ".$_SESSION['food'];
 	echo "<p><b>Email</b>: ".$_SESSION['email'];
 	echo "<p><b>Days Premium</b>: ".$_SESSION['dayspremium'];
-	echo "<p><b>Wood</b>: ".$_SESSION['wood'];
 ?>
 
 </body>
